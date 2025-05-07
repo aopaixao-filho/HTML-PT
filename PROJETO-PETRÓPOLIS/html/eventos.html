@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Petrópolis | Cidade Imperial</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/eventos.css"> <!-- CSS específico para esta página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-with-bg">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.jpg" alt="Logo Petrópolis">
+                <h1>Petrópolis</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="leste.html">Área Leste</a></li>
+                    <li><a href="oeste.html">Área Oeste</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
+                    <li><a href="eventos.html" class="active">Eventos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Eventos em Petrópolis</h2>
+                <p class="subtitle">Confira a agenda cultural da Cidade Imperial</p>
+                <div class="search-filter">
+                    <input type="text" placeholder="Buscar eventos...">
+                    <select>
+                        <option value="">Todos os meses</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="outubro">Outubro</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('../images/inverno.jpg');">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jul</span>
+                        </div>
+                        <div class="event-category">Festival</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Festival de Inverno</h3>
+                        <p class="event-description">O tradicional festival que reúne música, gastronomia e cultura durante o inverno petropolitano.</p>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Local:</strong> Centro Histórico</p>
+                            <p><i class="far fa-clock"></i> <strong>Horário:</strong> 10h às 22h</p>
+                            <p><i class="fas fa-ticket-alt"></i> <strong>Ingresso:</strong> Gratuito</p>
+                        </div>
+                        <a href="https://www.petropolis.rj.gov.br/turispetro/" target="_blank" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card highlighted">
+                    <div class="event-image" style="background-image: url('../images/bauern.jpg');">
+                        <div class="event-date">
+                            <span class="day">27</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="event-category">Festa Cultural</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Bauernfest</h3>
+                        <p class="event-description">A maior festa alemã da América Latina, com comidas típicas, cervejas e muita música.</p>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Local:</strong> Praça da Liberdade</p>
+                            <p><i class="far fa-clock"></i> <strong>Horário:</strong> 12h às 00h</p>
+                            <p><i class="fas fa-ticket-alt"></i> <strong>Ingresso:</strong> R$ 20,00</p>
+                        </div>
+                        <a href="https://www.petropolis.rj.gov.br/turispetro/" target="_blank" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('../images/literario.jpg');">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Out</span>
+                        </div>
+                        <div class="event-category">Literatura</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Feira Literária</h3>
+                        <p class="event-description">Encontro de escritores, palestras, lançamentos de livros e atividades culturais.</p>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Local:</strong> Casa de Petrópolis</p>
+                            <p><i class="far fa-clock"></i> <strong>Horário:</strong> 9h às 19h</p>
+                            <p><i class="fas fa-ticket-alt"></i> <strong>Ingresso:</strong> Gratuito</p>
+                        </div>
+                        <a href="https://www.petropolis.rj.gov.br/turispetro/" target="_blank" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h3>Receba a programação de eventos no seu e-mail</h3>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail">
+                    <button type="submit" class="btn">Assinar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Petrópolis</h4>
+                    <p>A Cidade Imperial que encanta com sua história, cultura e paisagens deslumbrantes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="gastronomia.html">Gastronomia</a></li>
+                        <li><a href="https://www.petropolis.rj.gov.br/turispetro/downloads/calendario_eventos.pdf" target="_blank">Mapa Turístico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (24) 2233-1212</p>
+                    <p><i class="fas fa-envelope"></i> turismo@petropolis.rj.gov.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Secretaria de Turismo de Petrópolis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
