@@ -1,0 +1,117 @@
+/* remover todas as margens, espacamentos e definir o tamanho da box antes de comecar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(206, 206, 206);
+}
+
+/* todos com "nav" sao estilos do menu de navegacao */
+nav {
+    background-color:#222;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a462d1;
+    border-radius: 5px;
+}
+
+
+/* estilo banner da HOME*/
+.home-banner {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/petropolis1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-conteudo {
+    text-align: center;
+    color: azure;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.home-banner:hover .banner-conteudo {
+    opacity: 1;
+}
+
+.banner-conteudo h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner-conteudo p {
+    font-size: 24px;
+}
+
+
+img.turismo-img {
+    width: 80%; /* Ajusta a largura da imagem, pode ser alterado conforme necessário */
+    max-width: 600px; /* Define um limite máximo para a largura */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px auto; /* Centraliza a imagem com margem superior e inferior */
+    display: block; /* Faz a imagem ocupar o espaço de bloco e ser centralizada */
+}
+
+.area-leste, .area-oeste, .eventos, .gastronomia {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #90cdf4; /* azul clarinho ou escolha outro que combine */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* para tirar a bolinha de tópico antes de cada item da lista */
+.eventos ul,
+.gastronomia ul,
+.area-leste ul,
+.area-oeste ul {
+    list-style: none;
+    padding-left: 0;
+}
